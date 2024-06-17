@@ -9,7 +9,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const addcaloriesRouter = require('./routes/addcalories');
 const reportRouter = require('./routes/report');
-
+const aboutRouter = require('./routes/about');
 const app = express();
 
 // MongoDB connection string
@@ -37,6 +37,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/addcalories', addcaloriesRouter);
 app.use('/report',reportRouter);
+app.use('/about',aboutRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
