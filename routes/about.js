@@ -5,7 +5,7 @@ router.get('/', async (req, res) => {
     try {
         const developers = [
             { firstname: 'Naor', lastname: 'Abudi', id: 203571039, email: 'naor2912@gmail.com' },
-            { firstname: 'Adi-malka', lastname: 'Malka', id: 315426684, email: 'adimalka14@gmail.com' }
+            { firstname: 'Adi_', lastname: 'Malka', id: 315426684, email: 'adimalka14@gmail.com' }
         ];
         res.json(developers);
     } catch (err) {
